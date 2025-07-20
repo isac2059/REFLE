@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mistério</title>
+    <link rel="stylesheet" href="convite.css">
+</head>
+<body>
+    <audio id="musicaFundo" src="ENHYPEN (엔하이픈) 2025 Golden Disc Awards Performance Practice Part 2. Moonstruck.mp3" preload="auto"></audio>
+    <div class="container">
+        <h1>Qual carta tem uma surpresa???</h1>
+        <div class="cards">
+            <div class="card" data-correct="false"><img src="card.jpg" alt=""></div>
+            <div class="card" data-correct="false"><img src="card3.jpg" alt=""></div>
+            <div class="card" data-correct="true"><img src="card4.jpg" alt=""></div>
+            <div class="card" data-correct="false"><img src="card6.jpg" alt=""></div>
+        </div>
+        <div id="convite" style="display:none;">
+            <p>Parabéns! Você encontrou o convite especial!<br>
+            Oi! Gostaria de ir ao cinema comigo?<br>
+            Vai ser divertido, topa?</p>
+            <button id="instagramBtn">Sim, quero ir! 🍿</button>
+        </div>
+
+        <!-- Adicione dentro da .container, depois do #convite -->
+<div id="surpresa" style="display:none;">
+    <img id="imgAndando" src="img/gat-unscreen.gif" alt="Imagem andando" />
+    <p id="textoSurpresa" style="display:none;">Parece que você deixou cair...</p>
+    <button id="abrirConvite" style="display:none;">Abrir</button>
+</div>
+    </div>
+<script src="convite.js" ></script>
